@@ -24,6 +24,7 @@ class DetailViewController: UIViewController {
     guard let detail = self.detailItem else { return }
     guard let imageView = self.detailImageView else { return }
     imageView.image = UIImage(named: detail)
+    self.title = detail
   }
 
   override func viewDidLoad() {
